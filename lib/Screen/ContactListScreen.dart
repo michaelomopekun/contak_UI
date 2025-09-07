@@ -1,4 +1,5 @@
 import 'package:contak/Model/contactModel.dart';
+import 'package:contak/widgets/contact_appbar.dart';
 import 'package:flutter/material.dart';
 
 class Contactlistscreen extends StatefulWidget
@@ -17,7 +18,19 @@ class _contactlistscreenstate extends State<Contactlistscreen>
   @override
   Widget build(BuildContext context) 
   {
-    
+    return Scaffold
+    (
+      appBar: const PreferredSize
+      (
+        preferredSize: Size.fromHeight(kToolbarHeight), 
+        child: ContactAppBar()
+      ),
+
+      body: const Center
+      (
+        // child: Te,
+      ),
+    );
   }
   
 }
